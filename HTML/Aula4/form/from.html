@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Formulário</title>
+    </head>
+    <body>
+        <h1>Formulário</h1>
+        <form action="http://localhost:3003/alunos" method="GET">
+            <div>
+                <input type="text" name="nomeSobrenome" placeholder="Nome">
+                <input type="password" name="senha" placeholder="Senha">
+            </div>
+            <div>
+                <label id="cfpCnpj">CPF ou CNPJ</label>
+                <input type="text" name="cfpCnpj">
+            </div>
+            <div>
+                <textarea name="descricao" id="descricaoText" cols="40" rows="5">Faça a sua descrição!</textarea>
+            </div>
+            <div>
+                <label>Feminino</label>
+                <input type="radio" name="sexo" value="fem">
+                <label>Masculino</label>
+                <input type="radio" name="sexo" value="masc" required>
+            </div>
+            <div>
+                <label>Você é atleta?</label>
+                <input type="checkbox" name="atleta" value="sim">
+            </div>
+            <div>
+                <select name="estados" required>
+                    <option value="rj">Rio de Janeiro</option>
+                    <option value="ba">Bahia</option>
+                    <option value="ce">Ceará</option>
+                </select>
+            </div>
+            <div>
+                <select name="estados" multiple size="3" required>
+                    <option value="rj">Rio de Janeiro</option>
+                    <option value="ba">Bahia</option>
+                    <option value="ce">Ceará</option>
+                </select>
+            </div>
+            <button type="submit">Matricula</button>
+        </form>
+    </body>
+</html>
+
